@@ -4,13 +4,28 @@ package rocks.zipcode.io.assessment4.objectorientation.enums;
  * @author leon on 09/12/2018.
  */
 public enum RockPaperScissorHandSign {
-    ADD_ENUMERATIONS_HERE;
 
+        ROCK, PAPER, SCISSOR;
     public RockPaperScissorHandSign getWinner() {
-        return null;
-    }
-
+            switch (this) {
+                case ROCK:
+                    return PAPER;
+                case SCISSOR:
+                    return ROCK;
+                case PAPER:
+                    return SCISSOR;
+            }
+            return null;
+        }
     public RockPaperScissorHandSign getLoser() {
-        return null;
+            switch (this) {
+                case PAPER:
+                    return ROCK;
+                case ROCK:
+                    return SCISSOR;
+                case SCISSOR:
+                    return PAPER;
+            }
+            return null;
+        }
     }
-}

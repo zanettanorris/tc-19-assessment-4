@@ -12,11 +12,13 @@ public class VowelUtils {
     }
 
     public static Integer getIndexOfFirstVowel(String word) {
-//       int index;
-//        for (int i = 0; i <word.length();){
-//            if (isVowel(word.charAt(i)) == false, i++;}
-             return 0;
-    }
+        String loweredWord = word.toLowerCase();
+        for (int index = 0; index < loweredWord.length(); index++) {
+            if (isVowel(loweredWord.charAt(index))){
+                return index; }
+        }
+    return -1;
+}
 
 
     public static Boolean startsWithVowel(String word) {

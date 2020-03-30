@@ -27,6 +27,7 @@ public class ArrayUtility<SomeType> {
     return null;}
 
 
+
     public Integer getNumberOfOccurrences(SomeType valueToEvaluate) {
         Integer counter = 0;
         for (int i = 0; i < array.length; i++){

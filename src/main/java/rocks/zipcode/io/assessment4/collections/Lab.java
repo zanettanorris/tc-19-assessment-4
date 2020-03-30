@@ -7,11 +7,7 @@ public class Lab {
     private String labName;
     private LabStatus labStatus;
 
-    public enum LabStatus {
-        INCOMPLETE,
-        PENDING,
-        COMPLETED;
-    }
+
 
     public Lab() {
         this(null);

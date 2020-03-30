@@ -28,13 +28,13 @@ return null;
     }
 
     public void forkLab(Lab lab) {
-        try {
-            this.labStatus = labStatus;
-        } catch (UnsupportedOperationException exception) {
-            this.labStatus = labStatus;
+        setLabStatus(labName, LabStatus.PENDING);
+
+//            this.labStatus = labStatus;
+//        } ( UnsupportedOperationException exception) {
+
 
         }
-    }
 
     public LabStatus getLabStatus(String labName) {
         return labStatus;
